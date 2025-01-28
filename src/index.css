@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "anzo1";
+  src: url(./assets/anzo1.woff2);
+}
+@font-face {
+  font-family: "anzo2";
+  src: url(./assets/anzo2.woff2);
+}
+@font-face {
+  font-family: "anzo3";
+  src: url(./assets/anzo3.woff2);
+}
+@font-face {
+  font-family: "anzo4";
+  src: url(./assets/anzo4.woff2);
+}
+@font-face {
+  font-family: "anzo";
+  src: url(./assets/alaganzo.woff2);
+}
+
+
+
+body {
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+#page1-in{
+  position:relative;
+  perspective: 1000px;
+}
+
+#section2{
+  position:relative;
+  perspective: 1000px;
+}
+#tiltDiv{
+  width:fit-content
+}
+.rotateText {
+  transform-origin: right center; /* Rotates around the right-middle point */
+  will-change: transform, opacity; /* Optimize for smoother animations */
+  backface-visibility: hidden; /* Improves rendering performance during rotation */
+}
+
+.page10-container {
+  height: 120vh;
+  background-image: url("https://static.wixstatic.com/media/f1c650_739893a03c1f4a6991c28005e9fd8372~mv2.jpg/v1/fill/w_1263,h_972,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f1c650_739893a03c1f4a6991c28005e9fd8372~mv2.jpg"); /* Replace with actual image path */
+  background-attachment: fixed; /* Fixed background for parallax effect */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+.page11-container {
+  height: 120vh;
+  background-image: url("https://static.wixstatic.com/media/f1c650_8b19a36c22b44b04aa056d2f4482aeac~mv2.jpeg/v1/fill/w_1263,h_972,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f1c650_8b19a36c22b44b04aa056d2f4482aeac~mv2.jpeg"); /* Replace with actual image path */
+  background-attachment: fixed; /* Fixed background for parallax effect */
+  background-size: cover;
+  /* background-position: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+
