@@ -40,3 +40,61 @@
 .read-the-docs {
   color: #888;
 }
+
+
+
+/* Basic Responsive Styles */
+#section2 {
+  padding: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: #9b9b9b;
+}
+
+h1 {
+  font-size: 10vw;
+  line-height: 8rem;
+  font-family: 'anzo1', sans-serif;
+  margin-bottom: 2rem; /* Default margin between h1s */
+}
+
+/* Large screen */
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 8vw;
+    line-height: 4rem;
+    margin-bottom: 3rem;
+  }
+}
+
+/* Medium screen */
+@media (max-width: 1200px) and (min-width: 768px) {
+  h1 {
+    font-size: 10vw;
+    line-height: 2rem;
+    margin-bottom: 10px; /* Adjusting margin */
+  }
+}
+
+/* Small screen */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 14vw;
+    line-height: 0.1rem;
+    margin-bottom: 10px; /* Reduced gap on small screens */
+  }
+
+  .responsive-images svg {
+    width: 100%;
+    height: auto;
+    transform: scale(0.8);
+  }
+}
+
+.responsive-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
